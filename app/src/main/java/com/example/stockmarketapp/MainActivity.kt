@@ -8,11 +8,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
-import com.example.stockmarketapp.presentation.company_listings.NavGraphs
+import com.example.stockmarketapp.presentation.NavGraphs
 import com.example.stockmarketapp.ui.theme.StockMarketAppTheme
-import com.ramcosta.composedestinations.*
-import com.ramcosta.composedestinations.annotation.NavGraph
-import com.ramcosta.composedestinations.spec.NavGraphSpec
+import com.ramcosta.composedestinations.DestinationsNavHost
 import dagger.hilt.android.AndroidEntryPoint
 
 //import com.example.stockmarketapp.presentation.company_listings.*
@@ -28,7 +26,6 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                      DestinationsNavHost(navGraph = NavGraphs.root)
-//                     DestinationsNavHost(navGraph = .root)
                 }
             }
         }
